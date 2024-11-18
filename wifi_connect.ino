@@ -103,6 +103,7 @@ void inputKeyboard() {
       if (status.enter) {
           data.remove(0, 2);
           inputTextComplete = true;
+          return;
       }
       M5Cardputer.Display.drawString(data, 2, M5Cardputer.Display.height() - 10);
 
